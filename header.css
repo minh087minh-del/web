@@ -1,0 +1,101 @@
+:root {
+  --text: #111827;
+  --muted: #6b7280;
+  --badge: #3157b6;
+  --border: #e5e7eb;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+.topbar {
+  height: 70px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 230px;
+}
+.brand-logo {
+  height: 32px;
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-btn {
+  appearance: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  font-weight: 800;
+  font-style: italic;
+  border: none;
+}
+.nav-btn:hover {
+  background: #f7f7f7;
+}
+.badge {
+  background: var(--badge);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-style: italic;
+}
+.bell,
+.icon,
+.avatar {
+  border: 0; /* code để xóa viền*/
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+}
+.danhsach {
+  position: relative;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.danhsach:hover .menu {
+  display: block;
+}
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}

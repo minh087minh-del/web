@@ -1,146 +1,141 @@
 <!doctype html>
 <html lang="vi">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Frontend Mentor Header</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Mentor Header</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
 
-<style>
-  :root{
-    --text:#111827;
-    --muted:#6b7280;
-    --badge:#3157b6;
-    --border:#e5e7eb;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
-    color:var(--text);
-  }
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img
+          class="brand-logo"
+          src="https://www.frontendmentor.io/images/logo-desktop.svg"
+          alt="Frontend Mentor logo"
+        />
+      </div>
 
-  .topbar{
-    height:70px;
-    border-bottom:1px solid var(--border);
-    display:flex;
-    align-items:center;
-    gap:20px;
-    padding:0 16px;
-  }
+      <nav class="nav-right">
+        <div class="danhsach">
+          <button class="nav-btn">
+            EXPLORE
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="menu">
+            <li>
+              <i class="fa-solid fa-layer-group"></i>
+              LEANING PATHS
+            </li>
+            <li>
+              <i class="fa-solid fa-laptop-file"></i>
+              CHALLENGES
+            </li>
+            <li>
+              <i class="fa-solid fa-code"></i>
+              SOLUTIONS
+            </li>
+            <li><i class="fa-brands fa-css"></i> ARTICLE</li>
+            <li><i class="fa-regular fa-address-card"></i> GUIDES</li>
+          </ul>
+        </div>
+        <div class="danhsach">
+          <button class="nav-btn">
+            FOR COMPANIES
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="menu">
+            <li><i class="fa-regular fa-chess-bishop"></i> HIRE DEVELOPERS</li>
+            <li><i class="fa-regular fa-chess-king"></i> TRAIN DEVELOPERS</li>
+          </ul>
+        </div>
+        <button class="nav-btn">
+          UNLOCK
+          <span class="badge">PRO</span>
+        </button>
+        <button class="bell">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        <button class="icon">
+          <i class="fa-solid fa-briefcase"></i>
+          <!-- tim khong ra cai giong -->
+        </button>
+        <button class="avatar">
+          <img src="/web/anhavartar.png" alt="" class="avatar" />
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="sub-main">
+        <div class="sub-nav">
+          <span class="sub-text">HOME</span>
+        </div>
 
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    min-width:230px;
-  }
-  .brand-logo{
-    height:32px;
-  }
+        <div class="sub-right">
+          <span style="text-decoration: underline; text-decoration-color: red"
+            >Feeds</span
+          >
+          <span>My Learning Paths</span>
+          <span>My Challenges</span>
+          <span>My Network</span>
+          <span>My Bookmarks</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="slidebar">
+          <div class="slidebar-box1">
+            <img src="/web/anhavartar.png" alt="Avatar " class="avatar" />
+            Phạm Quang Minh
+            <div class="box1-text">
+              <span class="khung-icon">
+                <i class="fa-solid fa-briefcase"></i>
+                <i class="fa-solid fa-circle-xmark nut-x"></i>
+              </span>
+              Unavailable for work
+            </div>
+          </div>
+          <div class="slidebar-box2">
+            <h2>Credits</h2>
+            <ul class="box2-ul">
+              <li class="box2-li">
+                <span>Design</span>
+                <span>0</span>
+              </li>
+              <li class="box2-li">
+                <span>Premium</span>
+                <span>0</span>
+              </li>
+              <li class="box2-li">
+                <span>AI report</span>
+                <span>2</span>
+              </li>
+            </ul>
 
-  .nav-right{
-    margin-left:auto;
-    display:flex;
-    align-items:center;
-    gap:6px;
-  }
-  .nav-btn{
-    appearance:none;
-    border:0;
-    background:none;
-    cursor:pointer;
-    padding:10px 12px;
-    border-radius:8px;
-    display:flex;
-    align-items:center;
-    gap:6px;
-    font-weight:700;
-    color:var(--text);
-  }
-  .nav-btn:hover{ background:#f7f7f7; }
-
-  .chev{
-    width:14px;
-    height:14px;
-    color:var(--muted);
-  }
-
-  .badge{
-    background:var(--badge);
-    color:#fff;
-    padding:4px 10px;
-    font-size:12px;
-    border-radius:8px;
-    font-weight:700;
-  }
-
-  .icon-btn{
-    width:40px;height:40px;
-    display:flex;align-items:center;justify-content:center;
-    border-radius:8px;
-  }
-  .icon-btn:hover{ background:#f3f3f3; }
-
-  .avatar{
-    width:36px;height:36px;
-    border-radius:50%;
-    background:#f3f4f6;
-    display:flex;align-items:center;justify-content:center;
-    font-weight:800;
-    color:#d33dde;
-  }
-</style>
-</head>
-
-<body>
-<header class="topbar">
-
-  <div class="brand">
-    <img class="brand-logo" src="https://www.frontendmentor.io/images/logo-desktop.svg" alt="Frontend Mentor logo">
-  </div>
-
-  <nav class="nav-right">
-    <button class="nav-btn">
-      EXPLORE
-      <svg class="chev" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M7 10l5 5 5-5H7z"></path>
-      </svg>
-    </button>
-
-    <button class="nav-btn">
-      FOR COMPANIES
-      <svg class="chev" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M7 10l5 5 5-5H7z"></path>
-      </svg>
-    </button>
-
-    <button class="nav-btn">
-      MỞ KHÓA
-      <span class="badge">CHUYÊN NGHIỆP</span>
-    </button>
-
-    #
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="#111827">
-        <path d="M12 22a2.5 2.5 0 0 0 2.45-2H9.55A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-14 0v5l-2 2v1h18v-1l-2-2Z" />
-      </svg>
-    </a>
-
-    #
-      <svg width="22" height="22" viewBox="0 0 24 24" stroke="#111827" fill="none" stroke-width="2">
-        <path d="M6 6h14l-2 9H8L6 6Zm-1 0H3" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="9" cy="20" r="1.7" fill="#111827"/>
-        <circle cx="17" cy="20" r="1.7" fill="#111827"/>
-      </svg>
-    </a>
-
-    <span class="avatar">PQ</span>
-
-    #
-      <svg width="18" height="18" viewBox="0 0 24 24" stroke="#111827" fill="none" stroke-width="2">
-        <path d="M8 10l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </nav>
-</header>
-</body>
+          </div>
+          <div  class="slidebar-box3">
+            <h2 class="box3-text">Followed Tags</h2>
+            <p>Follow tags you’re interested in to see tagged solutions in your feed</p>
+            <button class="box3-button">EXPLORE TAGS</button>
+          </div>
+        </div>
+        <div class="grid-main">
+          
+        </div>
+        <div class="slidebar2"></div>
+      </div>
+    </main>
+  </body>
 </html>

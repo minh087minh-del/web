@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Frontend Mentor Header</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -19,66 +20,70 @@
   </head>
 
   <body>
-    <header class="topbar">
-      <div class="brand">
-        <img
-          class="brand-logo"
-          src="https://www.frontendmentor.io/images/logo-desktop.svg"
-          alt="Frontend Mentor logo"
-        />
-      </div>
+    <div class="header_outside">
+      <header class="topbar">
+        <div class="brand">
+          <img
+            class="brand-logo"
+            src="https://www.frontendmentor.io/images/logo-desktop.svg"
+            alt="Frontend Mentor logo"
+          />
+        </div>
 
-      <nav class="nav-right">
-        <div class="danhsach">
+        <nav class="nav-right">
+          <div class="danhsach">
+            <button class="nav-btn">
+              EXPLORE
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="menu">
+              <li>
+                <i class="fa-solid fa-layer-group"></i>
+                LEANING PATHS
+              </li>
+              <li>
+                <i class="fa-solid fa-laptop-file"></i>
+                CHALLENGES
+              </li>
+              <li>
+                <i class="fa-solid fa-code"></i>
+                SOLUTIONS
+              </li>
+              <li><i class="fa-brands fa-css"></i> ARTICLE</li>
+              <li><i class="fa-regular fa-address-card"></i> GUIDES</li>
+            </ul>
+          </div>
+          <div class="danhsach">
+            <button class="nav-btn">
+              FOR COMPANIES
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="menu">
+              <li>
+                <i class="fa-regular fa-chess-bishop"></i> HIRE DEVELOPERS
+              </li>
+              <li><i class="fa-regular fa-chess-king"></i> TRAIN DEVELOPERS</li>
+            </ul>
+          </div>
           <button class="nav-btn">
-            EXPLORE
+            UNLOCK
+            <span class="badge">PRO</span>
+          </button>
+          <button class="bell">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button class="icon">
+            <i class="fa-solid fa-briefcase"></i>
+            <!-- tim khong ra cai giong -->
+          </button>
+          <button class="avatar">
+            <img src="/web/anhavartar.png" alt="" class="avatar" />
             <i class="fa-solid fa-angle-down"></i>
           </button>
-          <ul class="menu">
-            <li>
-              <i class="fa-solid fa-layer-group"></i>
-              LEANING PATHS
-            </li>
-            <li>
-              <i class="fa-solid fa-laptop-file"></i>
-              CHALLENGES
-            </li>
-            <li>
-              <i class="fa-solid fa-code"></i>
-              SOLUTIONS
-            </li>
-            <li><i class="fa-brands fa-css"></i> ARTICLE</li>
-            <li><i class="fa-regular fa-address-card"></i> GUIDES</li>
-          </ul>
-        </div>
-        <div class="danhsach">
-          <button class="nav-btn">
-            FOR COMPANIES
-            <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <ul class="menu">
-            <li><i class="fa-regular fa-chess-bishop"></i> HIRE DEVELOPERS</li>
-            <li><i class="fa-regular fa-chess-king"></i> TRAIN DEVELOPERS</li>
-          </ul>
-        </div>
-        <button class="nav-btn">
-          UNLOCK
-          <span class="badge">PRO</span>
-        </button>
-        <button class="bell">
-          <i class="fa-regular fa-bell"></i>
-        </button>
-        <button class="icon">
-          <i class="fa-solid fa-briefcase"></i>
-          <!-- tim khong ra cai giong -->
-        </button>
-        <button class="avatar">
-          <img src="/web/anhavartar.png" alt="" class="avatar" />
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-      </nav>
-    </header>
-    <main class="main">
+        </nav>
+      </header>
+    </div>
+    <div class="sub-main_outside">
       <div class="sub-main">
         <div class="sub-nav">
           <span class="sub-text">HOME</span>
@@ -94,48 +99,267 @@
           <span>My Bookmarks</span>
         </div>
       </div>
-      <div class="container">
-        <div class="slidebar">
-          <div class="slidebar-box1">
-            <img src="/web/anhavartar.png" alt="Avatar " class="avatar" />
-            Phạm Quang Minh
-            <div class="box1-text">
-              <span class="khung-icon">
-                <i class="fa-solid fa-briefcase"></i>
-                <i class="fa-solid fa-circle-xmark nut-x"></i>
-              </span>
-              Unavailable for work
+    </div>
+    <div class="main_outside">
+      <main class="main">
+        <div class="container">
+          <div class="slidebar">
+            <div class="slidebar-box1">
+              <img src="/web/anhnhung/anhavartar.png" alt="Avatar " class="avatar" />
+              Phạm Quang Minh
+              <div class="box1-text">
+                <span class="khung-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <i class="fa-solid fa-circle-xmark nut-x"></i>
+                </span>
+                Unavailable for work
+              </div>
+            </div>
+            <div class="slidebar-box2">
+              <h2>Credits</h2>
+              <ul class="box2-ul">
+                <li class="box2-li">
+                  <span>Design</span>
+                  <span>0</span>
+                </li>
+                <li class="box2-li">
+                  <span>Premium</span>
+                  <span>0</span>
+                </li>
+                <li class="box2-li">
+                  <span>AI report</span>
+                  <span>2</span>
+                </li>
+              </ul>
+            </div>
+            <div class="slidebar-box3">
+              <h2 class="box3-text">Followed Tags</h2>
+              <p>
+                Follow tags you’re interested in to see tagged solutions in your
+                feed
+              </p>
+              <button class="box3-button">EXPLORE TAGS</button>
             </div>
           </div>
-          <div class="slidebar-box2">
-            <h2>Credits</h2>
-            <ul class="box2-ul">
-              <li class="box2-li">
-                <span>Design</span>
-                <span>0</span>
-              </li>
-              <li class="box2-li">
-                <span>Premium</span>
-                <span>0</span>
-              </li>
-              <li class="box2-li">
-                <span>AI report</span>
-                <span>2</span>
-              </li>
-            </ul>
-
+          <div class="grid-main">
+            <div class="gmain-item1">
+              <div class="item1-left">
+                <button class="item1-left-button1">My feed</button>
+                <button class="item1-left-button2">Latest feedback</button>
+              </div>
+              <div class="item1-right">
+                <button class="item1-right-button">SUBMIT SOLUTION</button>
+              </div>
+            </div>
+            <div class="gmain-item2">
+              <div class="item2-text1">
+                <h3 class="i2-texttop">
+                  Your feed is empty at the moment
+                </h3>
+                <p class="i2-textbottom">
+                  To populate your feed, submit a solution to a challenge,
+                  follow another community member, or follow a tag that
+                  interests you. If you’re looking for the perfect place to
+                  start, we recommend trying out this learning path:
+                </p>
+              </div>
+              <div class="item2-text2">
+                <div class="anh">
+                <img src="/web/anhnhung/anhweb.webp" alt="anhweb" class="anhgmain">
+                </div>
+                <div class="i2-text">
+                  <div class="i2-text1">
+                    <span class="newbie">Newbie</span>
+                  </div>
+                  <div class="i2-text2">
+                    Getting start on Frontend Mentor
+                  </div>
+                  <p class="i2-text3">
+                  These projects will help you find your feet on the Frontend Mentor platform and give you experience working with designs and building small projects. They're all HTML & CSS-only challenges, so they'll help you pick up the basics.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div  class="slidebar-box3">
-            <h2 class="box3-text">Followed Tags</h2>
-            <p>Follow tags you’re interested in to see tagged solutions in your feed</p>
-            <button class="box3-button">EXPLORE TAGS</button>
+          <div class="slidebar2">
+            <div class="sb2-item1">
+              <h2 class="sb2-i1-h2">
+                Take your skills to next level
+              </h2>
+              <ul class="sb2-i1-ul">
+                <li class="ul1-li">
+                  <span>🤖</span>
+                  AI-powered solution reviews
+                </li>
+                <li class="ul1-li">
+                <span>⭐️</span>
+                50+ portfolio-ready premium projects
+                </li>
+                <li class="ul1-li">
+                  <span>🎨</span>
+                  Professional Figma design files
+                </li>
+              </ul>
+              <div class="sb2-i1-text">
+                <span class="sb2-i1-span">
+                  Special pricing for 
+                  Viet Nam 
+                  :
+                </span>
+                <span class="sb2-i1-span2">
+                  Save
+                  50
+                  % on Pro 
+                </span>
+                <span class="sb2-i1-span3">vn</span>
+              </div>
+              <div class="sb2-i1-button">
+                <span class="sb2-i1-butto">
+                  upgrade now
+                </span>
+              </div>
+            </div>
+            <div class="sb2-item2">
+              <div class="sb2-i2-box">
+                <div class="i2-b1">
+                <span class="i2-b1-span">0</span>
+                <span class="i2-b1-span2">
+                  of
+                  150
+                </span>
+                </div>
+              </div>
+              <h2 class="sb2-i2-h2">
+                Looking to get hired?
+              </h2>
+              <p class="sb2-i2-p">
+                Once you earn 
+                150
+                 points, you’ll be eligible to create your Talent Profile and be discovered by recruiters on our Hiring Platform.
+               </p>
+               <span class="sb2-i2-span">Learn more</span>
+            </div>
+            <div class="sb2-item3">
+              <div class="sb2-i3-avartar">
+                <i class="fa-brands fa-accessible-icon"></i>
+              </div>
+              <h2 class="sb2-i3-h2">
+                Do you work in a team?
+              </h2>
+              <p class="sb2-i3-p">
+                Your company might pay for Pro as part of your professional training budget.
+              </p>
+              <span>Learn about Teams</span>
+            </div>
+            <div class="sb2-item4">
+              <h2 class="sb2-i4-h2">Latest articles</h2>
+              <span class="sb2-i4-span"></span>
+              <ul class="sb2-i4-ul">
+                <li class="sb2-i4-li">
+                  <p class="i4-li-p">We've launched Product Challenges</p>
+                  <span class="sb2-i4-span"></span>
+                </li>
+                <li class="sb2-i4-li">
+                  <p class="i4-li-p">Solution reports now include quality scores</p>
+                  <span class="sb2-i4-span"></span>
+                </li>
+                <li class="sb2-i4-li">
+                  <p class="i4-li-p" >Free members now get AI-powered code reviews each month</p>
+                  <span class="sb2-i4-span"></span>
+                </li>
+                <li class="sb2-i4-li">
+                  <p class="i4-li-p">Introducing progression levels and a revamped profile</p>
+                  <span class="sb2-i4-span"></span>
+                </li>
+                <li class="sb2-i4-li">
+                  <p class="i4-li-p">Introducing Guides: Your go-to resource for everything Frontend Mentor</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="grid-main">
-          
+      </main>
+    </div>
+    <div class="footer">
+      <div class="ft-box1">
+        <div class="ft-b1-item">
+          <img src="https://www.frontendmentor.io/images/logo-desktop.svg" alt="avartar">
+          <div class="b1-right">
+            <i class="fa-brands fa-weixin"></i>
+             <i class="fa-brands fa-x-twitter"></i>
+             <i class="fa-brands fa-linkedin-in"></i>
+             <i class="fa-brands fa-facebook"></i>
+          </div>
         </div>
-        <div class="slidebar2"></div>
       </div>
-    </main>
+      <div class="ft-box2">
+        <div class="ft-b2-item">
+          <div class="ft-b2-right">
+            <p class="ft-b2r-p">
+              <span class="ft-b2r-span1">Stay up to date</span>
+              <span class="ft-b2r-span2">with new challenges, featured solutions, selected articles, and our latest news</span>
+            </p>
+            <form action="" class="ft-b2r-form">
+              <div class="ft-b2r-label">
+                <label for=""></label>
+              </div>
+              <button class="ft-b2r-button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="ft-b2-left">
+            <div class="ft-b2l-box">
+              <h2 class="ft-b2l-h2">Frontend Mentor</h2>
+              <ul class="ft-b2l-ul">
+                <li class="ft-b2l-li">Unlock Pro</li>
+                <li class="ft-b2l-li">Contact us</li>
+                <li class="ft-b2l-li">FAQs</li>
+                <li class="ft-b2l-li">Become a partner</li>
+                <li class="ft-b2l-li">Use cases</li>
+              </ul>
+            </div>
+             <div class="ft-b2l-box">
+              <h2 class="ft-b2l-h2">Explore</h2>
+              <ul class="ft-b2l-ul">
+                <li class="ft-b2l-li">Learning paths</li>
+                <li class="ft-b2l-li">Challenges</li>
+                <li class="ft-b2l-li">Solutions</li>
+                <li class="ft-b2l-li">Articles</li>
+                <li class="ft-b2l-li">Guides</li>
+              </ul>
+            </div>
+             <div class="ft-b2l-box">
+              <h2 class="ft-b2l-h2">Community</h2>
+              <ul class="ft-b2l-ul">
+                <li class="ft-b2l-li">Discord</li>
+                <li class="ft-b2l-li">Guidelines</li>
+              </ul>
+            </div>
+             <div class="ft-b2l-box">
+              <h2 class="ft-b2l-h2">For companies</h2>
+              <ul class="ft-b2l-ul">
+                <li class="ft-b2l-li">Hire developers</li>
+                <li class="ft-b2l-li">Train developers</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="ft-box3">
+        <div class="ft-b3-item">
+        <span class="ft-b3-span">
+        © Frontend Mentor 2019 - 
+        2026  
+        </span>
+        <ul class="ft-b3-ul">
+          <li>Terms</li>
+          <li>Cookie Policy</li>
+          <li>Privacy Policy</li>
+          <li>License</li>
+        </ul>
+      </div>
+
+    </div>
   </body>
 </html>

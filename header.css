@@ -3,6 +3,7 @@
   --muted: #6b7280;
   --badge: #3157b6;
   --border: #e5e7eb;
+  --blue: #3E53A3
 }
 * {
   box-sizing: border-box;
@@ -19,9 +20,12 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0 16px;
+  padding-block: 20px;
+  margin-inline: 7.6px;
 }
-
+.header_outside {
+  padding-inline: 30px;
+}
 .brand {
   display: flex;
   align-items: center;

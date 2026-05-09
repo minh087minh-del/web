@@ -43,7 +43,15 @@
   grid-template-areas: "slidebar main slidebar2";
   gap: 30px;
   margin-inline: 7.6px;
-
+}
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+      "main"
+      "slidebar"
+      "slidebar2";
+  }
 }
 .slidebar {
   grid-area: slidebar;
@@ -249,6 +257,14 @@ border: none;
   text-transform: uppercase;
   line-height: 1.1;
 }
+@media (max-width: 768px) {
+  .item2-text2 {
+    flex-direction: column;
+  }
+  .anh {
+    width: 100%;
+  }
+}
 .i2-text3 {
   font-size: 18px;
   color: #767676;
@@ -276,6 +292,7 @@ border: none;
   font-size: 1.3281rem;
   color: #fff;
   line-height: 1.375;
+  margin: 0;
 }
 .sb2-i1-ul {
   margin: 0;

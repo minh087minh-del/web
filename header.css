@@ -111,23 +111,12 @@ body {
     min-width: auto; 
     gap: 8px;
   }
-  .brand span {
+  .brand span, .nav-center, .nav-btn, .danhsach {
     display: none;
   }
-
-  .nav-center {
-    display: none;
-  }
-
   .nav-right {
     gap: 10px; 
   }
-  .danhsach {
-    display: none;
-  }
-  .nav-btn {
-    display: none;
-  }  
   .avatar {
     width: 30px;
     height: 30px;
